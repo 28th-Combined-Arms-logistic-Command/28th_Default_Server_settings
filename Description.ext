@@ -1,0 +1,20 @@
+author = "Department of Unit Operations"; // Author
+onLoadName = "Operations"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
+onLoadMission = "Department of Unit Operations";
+loadScreen = "LoadingScreen\Loading.paa";
+class Header
+{
+	gameType = Coop; // MP mission type
+};
+
+
+//--- Control Chat - Format: {channelID<number>, disableChat<bool>, disableVoice<bool>}
+disableChannels[] = {
+    {0, true, true}, //--- Global Chat
+    {1, true, true}, //--- Side Chat
+    {2, true, true}, //--- Command Chat
+    {3, false, true}, //--- Group Chat
+    {4, false, true}, //--- Vehicle Chat
+    {5, false, true}, //--- Direct Chat
+    {6, true, true} //--- System Chat
+};
